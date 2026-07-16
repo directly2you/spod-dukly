@@ -1,0 +1,25 @@
+# Gallery photos with per-language alt texts (SEO + accessibility)
+- image: hero.jpg
+  sk: "Sprievodca Marián Derco pri protitankovom dele nad údolím pri Dukle"
+  en: "Guide Marián Derco next to an anti-tank gun above a valley near Dukla"
+- image: tour-dukla.jpg
+  sk: "Vyhliadková veža na Dukle s tankom medzi stromami"
+  en: "Dukla observation tower with a tank among the trees"
+- image: tour-perly.jpg
+  sk: "Drevený chrám a kamenný kríž na cintoríne pri Svidníku"
+  en: "Wooden church and stone cross at a cemetery near Svidník"
+- image: gallery-delo.jpg
+  sk: "Marián Derco na lúke pri sovietskej húfnici z 2. svetovej vojny"
+  en: "Marián Derco in a meadow by a Soviet WWII howitzer"
+- image: tour-ladomirova.jpg
+  sk: "Chrám v Ladomirovej – križovatka vierovyznaní"
+  en: "Church in Ladomirová – a crossroads of faiths"
+- image: gallery-kriz.jpg
+  sk: "Prícestný kríž pod stromami pri kamennom múre"
+  en: "Wayside crucifix under trees by a stone wall"
+- image: tour-svoboda.jpg
+  sk: "Detail dela na trase Cestou generála Svobodu"
+  en: "Artillery detail on the General Svoboda trail"
+- image: tour-custom.jpg
+  sk: "Kamenný pamätník pri Dukelskom priesmyku"
+  en: "Carved stone monument near the Dukla Pass"

@@ -11,6 +11,9 @@
   <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ i18n.description | default: site.description }}{% endif %}">
   <meta name="keywords" content="Dukla, Svidník, sprievodca, drevené chrámy, Údolie smrti, Rusíni, tours, guide, Slovakia">
 
+  <meta name="author" content="Marián Derco">
+  <link rel="canonical" href="{{ page.url | absolute_url }}">
+
   <!-- hreflang alternate links for SEO -->
   {% if page.ref %}
     {% for l in site.data.languages %}
@@ -19,16 +22,57 @@
         <link rel="alternate" hreflang="{{ l.code }}" href="{{ p.url | absolute_url }}">
       {% endfor %}
     {% endfor %}
-    <link rel="alternate" hreflang="x-default" href="{{ page.url | absolute_url }}">
+    <link rel="alternate" hreflang="x-default" href="{{ '/' | absolute_url }}">
   {% endif %}
 
-  <!-- Open Graph -->
+  <!-- Open Graph / Twitter -->
   <meta property="og:type" content="website">
+  <meta property="og:site_name" content="{{ site.title }}">
   <meta property="og:url" content="{{ page.url | absolute_url }}">
   <meta property="og:title" content="{{ site.title }} – {{ i18n.tagline }}">
   <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ i18n.description | default: site.description }}{% endif %}">
-  <meta property="og:image" content="{{ '/assets/images/logo.png' | absolute_url }}">
-  <meta property="og:locale" content="{{ lang }}">
+  <meta property="og:image" content="{{ '/assets/images/photos/hero.jpg' | absolute_url }}">
+  <meta property="og:locale" content="{% if lang == 'sk' %}sk_SK{% else %}en_GB{% endif %}">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ site.title }} – {{ i18n.tagline }}">
+  <meta name="twitter:description" content="{% if page.description %}{{ page.description }}{% else %}{{ i18n.description | default: site.description }}{% endif %}">
+  <meta name="twitter:image" content="{{ '/assets/images/photos/hero.jpg' | absolute_url }}">
+
+  <!-- Structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "TouristInformationCenter",
+    "name": "{{ site.title }}",
+    "alternateName": "Spod Dukly – sprievodca v čase",
+    "description": {{ i18n.description | jsonify }},
+    "url": "{{ '/' | absolute_url }}",
+    "image": "{{ '/assets/images/photos/hero.jpg' | absolute_url }}",
+    "logo": "{{ '/assets/images/logo.png' | absolute_url }}",
+    "email": "{{ site.email }}",
+    "telephone": "{{ site.company.phone | remove: ' ' }}",
+    "founder": { "@type": "Person", "name": "Marián Derco" },
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Medvedie",
+      "addressRegion": "Prešovský kraj",
+      "addressCountry": "SK"
+    },
+    "areaServed": ["Dukla", "Svidník", "Horný Šariš", "Horný Zemplín"],
+    "makesOffer": [
+      {% for tour in site.data.tours %}
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "TouristTrip",
+          "name": {{ tour[lang].name | jsonify }},
+          "description": {{ tour[lang].desc | jsonify }}
+        }
+      }{% unless forloop.last %},{% endunless %}
+      {% endfor %}
+    ]
+  }
+  </script>
 
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="{{ '/assets/images/favicon.png' | relative_url }}">

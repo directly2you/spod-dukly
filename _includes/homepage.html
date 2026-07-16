@@ -73,14 +73,9 @@
       <p>{{ i18n.gallery.subtitle }}</p>
     </div>
     <div class="gallery-grid">
-      <img src="{{ '/assets/images/photos/hero.jpg' | relative_url }}" alt="Dukla" loading="lazy">
-      <img src="{{ '/assets/images/photos/tour-dukla.jpg' | relative_url }}" alt="Dukla" loading="lazy">
-      <img src="{{ '/assets/images/photos/tour-perly.jpg' | relative_url }}" alt="" loading="lazy">
-      <img src="{{ '/assets/images/photos/gallery-delo.jpg' | relative_url }}" alt="" loading="lazy">
-      <img src="{{ '/assets/images/photos/tour-ladomirova.jpg' | relative_url }}" alt="Ladomirová" loading="lazy">
-      <img src="{{ '/assets/images/photos/gallery-kriz.jpg' | relative_url }}" alt="" loading="lazy">
-      <img src="{{ '/assets/images/photos/tour-svoboda.jpg' | relative_url }}" alt="" loading="lazy">
-      <img src="{{ '/assets/images/photos/tour-custom.jpg' | relative_url }}" alt="" loading="lazy">
+      {% for photo in site.data.gallery %}
+      <img src="{{ '/assets/images/photos/' | append: photo.image | relative_url }}" alt="{{ photo[lang] }}" loading="lazy">
+      {% endfor %}
     </div>
   </div>
 </section>
