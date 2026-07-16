@@ -88,3 +88,52 @@ if (contactForm) {
     }
   });
 }
+
+// Gallery lightbox — click a photo to view it full screen
+document.addEventListener('DOMContentLoaded', function() {
+  const lightbox = document.getElementById('lightbox');
+  if (!lightbox) return;
+
+  const photos = Array.from(document.querySelectorAll('.gallery-grid img'));
+  const imgEl = lightbox.querySelector('.lightbox-img');
+  let current = 0;
+
+  function show(index) {
+    current = (index + photos.length) % photos.length;
+    imgEl.src = photos[current].src;
+    imgEl.alt = photos[current].alt;
+  }
+
+  function open(index) {
+    show(index);
+    lightbox.classList.add('open');
+    lightbox.setAttribute('aria-hidden', 'false');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function close() {
+    lightbox.classList.remove('open');
+    lightbox.setAttribute('aria-hidden', 'true');
+    document.body.style.overflow = '';
+  }
+
+  photos.forEach((photo, i) => {
+    photo.addEventListener('click', () => open(i));
+  });
+
+  lightbox.querySelector('.lightbox-close').addEventListener('click', close);
+  lightbox.querySelector('.lightbox-prev').addEventListener('click', e => { e.stopPropagation(); show(current - 1); });
+  lightbox.querySelector('.lightbox-next').addEventListener('click', e => { e.stopPropagation(); show(current + 1); });
+
+  // click on the dark backdrop (not the image) closes
+  lightbox.addEventListener('click', e => {
+    if (e.target === lightbox) close();
+  });
+
+  document.addEventListener('keydown', e => {
+    if (!lightbox.classList.contains('open')) return;
+    if (e.key === 'Escape') close();
+    if (e.key === 'ArrowLeft') show(current - 1);
+    if (e.key === 'ArrowRight') show(current + 1);
+  });
+});
