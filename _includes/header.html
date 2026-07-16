@@ -1,0 +1,43 @@
+{% assign lang = page.lang | default: "sk" %}
+{% assign i18n = site.data.i18n[lang] %}
+
+<header class="site-header">
+  <div class="container">
+    <nav class="navbar">
+      <div class="navbar-brand">
+        <a href="#top" class="logo">
+          <img src="{{ '/assets/images/logo-sun.png' | relative_url }}" alt="{{ site.company.short_name }}" class="logo-img">
+          <span class="logo-text">SPOD DUKLY</span>
+        </a>
+      </div>
+
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="nav-menu">
+        <li class="nav-item"><a href="#about" class="nav-link">{{ i18n.nav.about }}</a></li>
+        <li class="nav-item"><a href="#tours" class="nav-link">{{ i18n.nav.tours }}</a></li>
+        <li class="nav-item"><a href="#gallery" class="nav-link">{{ i18n.nav.gallery }}</a></li>
+        <li class="nav-item"><a href="#contact" class="nav-link">{{ i18n.nav.contact }}</a></li>
+      </ul>
+
+      <!-- Language Switcher -->
+      <div class="lang-switcher">
+        {% for l in site.data.languages %}
+          {% if l.code == lang %}
+            <span class="lang-current" title="{{ l.name }}">{{ l.flag }} {{ l.code | upcase }}</span>
+          {% else %}
+            {% if l.code == "sk" %}
+              <a href="{{ '/' | relative_url }}" class="lang-link" title="{{ l.name }}">{{ l.flag }} {{ l.code | upcase }}</a>
+            {% else %}
+              <a href="{{ '/' | append: l.code | append: '/' | relative_url }}" class="lang-link" title="{{ l.name }}">{{ l.flag }} {{ l.code | upcase }}</a>
+            {% endif %}
+          {% endif %}
+        {% endfor %}
+      </div>
+    </nav>
+  </div>
+</header>

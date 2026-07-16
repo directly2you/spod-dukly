@@ -1,0 +1,126 @@
+{% assign lang = page.lang | default: "sk" %}
+{% assign i18n = site.data.i18n[lang] %}
+
+<!-- Hero -->
+<section class="hero" id="top" style="background-image: url('{{ '/assets/images/photos/hero.jpg' | relative_url }}');">
+  <div class="hero-overlay"></div>
+  <div class="container hero-content">
+    <h1>{{ i18n.hero.title }}</h1>
+    <p class="hero-tagline">{{ i18n.tagline }}</p>
+    <p class="hero-subtitle">{{ i18n.hero.subtitle }}</p>
+    <a href="#tours" class="btn btn-gold">{{ i18n.hero.cta }}</a>
+  </div>
+</section>
+
+<!-- About -->
+<section class="section" id="about">
+  <div class="container">
+    <div class="section-title">
+      <h2>{{ i18n.about.title }}</h2>
+    </div>
+    <div class="about-grid">
+      <div class="about-photo">
+        <img src="{{ '/assets/images/photos/about.jpg' | relative_url }}" alt="Marián Derco" loading="lazy">
+      </div>
+      <div class="about-text">
+        <p>{{ i18n.about.p1 }}</p>
+        <p>{{ i18n.about.p2 }}</p>
+        <p>{{ i18n.about.p3 }}</p>
+        <p>{{ i18n.about.p4 }}</p>
+        <p class="about-quote">„{{ i18n.about.quote }}“</p>
+        <p class="about-signature">Marián Derco</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Tours -->
+<section class="section section-alt" id="tours">
+  <div class="container">
+    <div class="section-title">
+      <h2>{{ i18n.tours.title }}</h2>
+      <p>{{ i18n.tours.subtitle }}</p>
+    </div>
+    <div class="tours-grid">
+      {% for tour in site.data.tours %}
+      {% assign t = tour[lang] %}
+      <article class="tour-card">
+        <div class="tour-image">
+          <img src="{{ '/assets/images/photos/' | append: tour.image | relative_url }}" alt="{{ t.name }}" loading="lazy">
+          <span class="tour-number">{{ forloop.index }}</span>
+        </div>
+        <div class="tour-body">
+          <h3>{{ t.name }}</h3>
+          <p>{{ t.desc }}</p>
+          <ul class="tour-meta">
+            <li><strong>{{ i18n.tours.length }}:</strong> {{ tour.length }}</li>
+            <li><strong>{{ i18n.tours.age }}:</strong> {{ tour.age }}</li>
+            <li><strong>{{ i18n.tours.time }}:</strong> {{ tour.time }}</li>
+          </ul>
+          <a href="#contact" class="btn btn-outline">{{ i18n.tours.book }}</a>
+        </div>
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- Gallery -->
+<section class="section" id="gallery">
+  <div class="container">
+    <div class="section-title">
+      <h2>{{ i18n.gallery.title }}</h2>
+      <p>{{ i18n.gallery.subtitle }}</p>
+    </div>
+    <div class="gallery-grid">
+      <img src="{{ '/assets/images/photos/hero.jpg' | relative_url }}" alt="Dukla" loading="lazy">
+      <img src="{{ '/assets/images/photos/tour-dukla.jpg' | relative_url }}" alt="Dukla" loading="lazy">
+      <img src="{{ '/assets/images/photos/tour-perly.jpg' | relative_url }}" alt="" loading="lazy">
+      <img src="{{ '/assets/images/photos/gallery-delo.jpg' | relative_url }}" alt="" loading="lazy">
+      <img src="{{ '/assets/images/photos/tour-ladomirova.jpg' | relative_url }}" alt="Ladomirová" loading="lazy">
+      <img src="{{ '/assets/images/photos/gallery-kriz.jpg' | relative_url }}" alt="" loading="lazy">
+      <img src="{{ '/assets/images/photos/tour-svoboda.jpg' | relative_url }}" alt="" loading="lazy">
+      <img src="{{ '/assets/images/photos/tour-custom.jpg' | relative_url }}" alt="" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section class="section section-dark" id="contact">
+  <div class="container">
+    <div class="section-title">
+      <h2>{{ i18n.contact.title }}</h2>
+      <p>{{ i18n.contact.subtitle }}</p>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-info">
+        <h3>{{ i18n.contact.info_title }}</h3>
+        <ul>
+          <li><strong>{{ i18n.contact.email_label }}:</strong> <a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+          <li><strong>{{ i18n.contact.phone_label }}:</strong> {{ site.company.phone }}</li>
+          <li><strong>{{ i18n.contact.address_label }}:</strong> {{ site.company.address }}</li>
+        </ul>
+        <img src="{{ '/assets/images/logo.png' | relative_url }}" alt="Spod Dukly" class="contact-logo" loading="lazy">
+      </div>
+      <form id="contact-form" class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+        <div class="form-group">
+          <label for="name">{{ i18n.form.name }}</label>
+          <input type="text" id="name" name="name" placeholder="{{ i18n.form.name_ph }}" required>
+        </div>
+        <div class="form-group">
+          <label for="email">{{ i18n.form.email }}</label>
+          <input type="email" id="email" name="email" placeholder="{{ i18n.form.email_ph }}" required>
+        </div>
+        <div class="form-group">
+          <label for="phone">{{ i18n.form.phone }}</label>
+          <input type="tel" id="phone" name="phone" placeholder="{{ i18n.form.phone_ph }}">
+        </div>
+        <div class="form-group">
+          <label for="message">{{ i18n.form.message }}</label>
+          <textarea id="message" name="message" placeholder="{{ i18n.form.message_ph }}" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-gold" data-sending="{{ i18n.form.sending }}" data-sent="{{ i18n.form.sent }}" data-error="{{ i18n.form.error }}">{{ i18n.form.submit }}</button>
+      </form>
+    </div>
+  </div>
+</section>

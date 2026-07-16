@@ -1,0 +1,93 @@
+# The five guided tours. Text in both languages; stats shared.
+- id: svoboda
+  image: tour-svoboda.jpg
+  length: "15 km"
+  age: "12+"
+  time: "6 h"
+  sk:
+    name: Cestou generála Svobodu
+    desc: >-
+      Náročná prehliadka po miestach, ktorými prechádzal legendárny generál
+      Ludvík Svoboda so svojím armádnym zborom a ťažkou vojenskou technikou.
+      Dozviete sa, kde bol jeho pozorovací bunker, ako vyzeral dvojitý nemecký
+      zákopový systém a mnoho iných faktov o 1. a 2. svetovej vojne.
+  en:
+    name: In the Footsteps of General Svoboda
+    desc: >-
+      A demanding tour of the places crossed by the legendary General Ludvík
+      Svoboda with his army corps and heavy military equipment. You will learn
+      where his observation bunker stood, what the double German trench system
+      looked like, and many other facts about World War I and II.
+
+- id: dukla
+  image: tour-dukla.jpg
+  length: "6,8 km"
+  age: "6+"
+  time: "3,5 h"
+  sk:
+    name: Dukla večne živá
+    desc: >-
+      Prečo je Dukla stále navštevovaným miestom? Čo ponúka vyhliadková veža
+      a jej blízke okolie? Toto zistíte na nenáročnej prechádzke po pamiatkach
+      Duklianskeho priesmyku.
+  en:
+    name: Dukla Forever Alive
+    desc: >-
+      Why does the Dukla Pass still draw visitors? What does the observation
+      tower and its surroundings offer? Find out on an easy walk around the
+      monuments of the Dukla Pass.
+
+- id: perly
+  image: tour-perly.jpg
+  length: "45 km"
+  age: "10+"
+  time: "8 h"
+  sk:
+    name: Karpatské drevené perly
+    desc: >-
+      Duchovný poklad ukrytý v dreve blahodarne vplýva aj na dušu človeka.
+      Okrem múzeí a známeho Údolia smrti sú pre Rusínov typické zrubové drevené
+      chrámy lemkovského typu. Navštívime najstarší drevený chrám, najmenšiu
+      obec na Slovensku a sedem drevených chrámov v okolí Svidníka.
+  en:
+    name: Carpathian Wooden Pearls
+    desc: >-
+      A spiritual treasure hidden in wood that soothes the soul. Besides the
+      museums and the famous Valley of Death, the Rusyns are known for their
+      Lemko-style log churches. We will visit the oldest wooden church, the
+      smallest village in Slovakia and seven wooden churches around Svidník.
+
+- id: ladomirova
+  image: tour-ladomirova.jpg
+  length: "2 km"
+  age: "6+"
+  time: "2 h"
+  sk:
+    name: Ladomirová – križovatka vierovyznaní
+    desc: >-
+      Históriu dediny Makovického panstva písali pravoslávni a gréckokatolícki
+      Rusíni, ale aj Židia. Zdanlivo pokojné malebné prostredie skrýva
+      zaujímavé príbehy nemých svedkov rôznorodej histórie.
+  en:
+    name: Ladomirová – A Crossroads of Faiths
+    desc: >-
+      The history of this village of the Makovica estate was written by
+      Orthodox and Greek Catholic Rusyns, as well as Jews. A seemingly quiet,
+      picturesque setting hides remarkable stories told by silent witnesses of
+      a diverse history.
+
+- id: custom
+  image: tour-custom.jpg
+  length: "—"
+  age: "—"
+  time: "—"
+  sk:
+    name: Trasa podľa želania
+    desc: >-
+      Ak vás zaujíma niečo konkrétne z regiónu a máte svoju predstavu, rád
+      pripravím prehliadku na mieru — stačí napísať.
+  en:
+    name: A Tour of Your Choice
+    desc: >-
+      If something specific in the region interests you and you have your own
+      idea, I will gladly prepare a tailor-made tour — just drop me a line.

@@ -1,0 +1,79 @@
+description: "Spod Dukly – sprievodca v čase. Zážitkové prehliadky severovýchodného Slovenska: Dukla, drevené chrámy, Údolie smrti a kraj Rusínov."
+
+tagline: sprievodca v čase
+
+nav:
+  about: O mne
+  tours: Trasy
+  gallery: Galéria
+  contact: Kontakt
+
+hero:
+  title: SPOD DUKLY
+  subtitle: "Objavte neprebádaný severovýchod Slovenska — kraj pod Duklou, Horný Šariš a Horný Zemplín."
+  cta: Vyberte si trasu
+
+about:
+  title: O mne
+  quote: "Poďme sa spoločne pozrieť na svetové unikáty, prejdime sa po zemi plnej utrpenia."
+  p1: >-
+    Volám sa Marián Derco. Som rodák z Nižnej Jedľovej – obce spod Dukly.
+    Na svojich cestách po svete (Anglicko, USA, Rusko, Bielorusko, Nemecko,
+    Rakúsko, Srbsko, Grécko a Turecko) som si uvedomil krásu obyčajnosti
+    a nezvyčajnosti nášho severovýchodu Slovenska.
+  p2: >-
+    Rástol som spolu s príbehmi a zážitkami nielen z 2. svetovej vojny.
+    Napriek ťažkým existenčným podmienkam moji predkovia ostali v tomto kraji.
+    Po prechode frontu počas 2. svetovej vojny mojej babke Anne ostala krava
+    a jej vlastná perina. Už 17 rokov bývam v malej dedinke Medvedie, ktorá
+    leží medzi Dukelským bojiskom a Údolím smrti.
+  p3: >-
+    Severovýchodom sa prehnali mongolsko-tatárske vpády, neskôr protihabsburské
+    povstania, roky meruôsme, boj za národnú identitu Rusínov, veľká emigrácia
+    do nového sveta a 1. a 2. svetová vojna natrvalo vryli pečať tomuto kraju.
+  p4: >-
+    Kraj pod Duklou, ale aj Horný Šariš a Horný Zemplín sú pre bežných
+    návštevníkov neprebádané územia – terra incognita. Príďte a uvidíte, že na
+    severovýchode je nádherná príroda, kultúrne, duchovné a vojenské pamiatky
+    a ešte stále tu žijú srdeční ľudia. Objavme drevené chrámy, ktoré sú tichými
+    miestami modlitby. Nadýchajme sa sviežeho vzduchu a naberme nové sily.
+
+tours:
+  title: Trasy
+  subtitle: "Päť prehliadok krajom pod Duklou — históriou, prírodou aj duchovným dedičstvom."
+  length: Dĺžka
+  age: Vek
+  time: Čas
+  book: Rezervovať trasu
+
+gallery:
+  title: Galéria
+  subtitle: Kraj pod Duklou objektívom
+
+contact:
+  title: Kontakt
+  subtitle: "Napíšte mi a dohodneme si termín prehliadky."
+  info_title: Kontaktné informácie
+  email_label: E-mail
+  phone_label: Telefón
+  address_label: Adresa
+
+form:
+  name: Celé meno
+  name_ph: Jana Nováková
+  email: E-mailová adresa
+  email_ph: jana@priklad.sk
+  phone: "Telefón (voliteľné)"
+  phone_ph: "+421 900 000 000"
+  message: Správa
+  message_ph: "O ktorú trasu máte záujem a kedy by ste chceli prísť?"
+  submit: Odoslať správu
+  sending: Odosielam...
+  sent: "✓ Odoslané!"
+  error: "Chyba — skúste znova"
+
+footer:
+  quick_links: Rýchle odkazy
+  contact: Kontakt
+  follow_us: Sledujte nás
+  rights: Všetky práva vyhradené.

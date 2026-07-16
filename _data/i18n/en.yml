@@ -1,0 +1,82 @@
+description: "Spod Dukly – a guide through time. Guided experience tours of north-eastern Slovakia: Dukla Pass, wooden churches, the Valley of Death and the land of the Rusyns."
+
+tagline: a guide through time
+
+nav:
+  about: About
+  tours: Tours
+  gallery: Gallery
+  contact: Contact
+
+hero:
+  title: SPOD DUKLY
+  subtitle: "Discover the undiscovered north-east of Slovakia — the land below the Dukla Pass, Upper Šariš and Upper Zemplín."
+  cta: Choose a tour
+
+about:
+  title: About me
+  quote: "Let's explore world-class rarities together and walk across a land full of suffering."
+  p1: >-
+    My name is Marián Derco. I was born in Nižná Jedľová, a village below the
+    Dukla Pass. On my travels around the world (England, the USA, Russia,
+    Belarus, Germany, Austria, Serbia, Greece and Turkey) I came to appreciate
+    the beauty of the ordinary and the extraordinary in the north-east of
+    Slovakia.
+  p2: >-
+    I grew up with stories and memories, not only from the Second World War.
+    Despite hard living conditions, my ancestors stayed in this land. After the
+    front passed through during WWII, my grandmother Anna was left with a cow
+    and her own duvet. For 17 years I have lived in the small village of
+    Medvedie, which lies between the Dukla battlefield and the Valley of Death.
+  p3: >-
+    The north-east was swept by Mongol-Tatar invasions, later anti-Habsburg
+    uprisings, the revolutions of 1848, the struggle for the national identity
+    of the Rusyns, the great emigration to the New World, and the First and
+    Second World Wars left a permanent mark on this land.
+  p4: >-
+    The land below Dukla, together with Upper Šariš and Upper Zemplín, remains
+    terra incognita for ordinary visitors. Come and see for yourself: the
+    north-east offers beautiful nature, cultural, spiritual and military
+    monuments — and warm-hearted people still live here. Let's discover wooden
+    churches that are quiet places of prayer, breathe in the fresh air and
+    gather new strength.
+
+tours:
+  title: Tours
+  subtitle: "Five guided tours of the land below Dukla — through history, nature and spiritual heritage."
+  length: Length
+  age: Age
+  time: Duration
+  book: Book this tour
+
+gallery:
+  title: Gallery
+  subtitle: The land below Dukla through the lens
+
+contact:
+  title: Contact
+  subtitle: "Write to me and we will arrange a date for your tour."
+  info_title: Contact information
+  email_label: E-mail
+  phone_label: Phone
+  address_label: Address
+
+form:
+  name: Full name
+  name_ph: Jane Smith
+  email: E-mail address
+  email_ph: jane@example.com
+  phone: "Phone (optional)"
+  phone_ph: "+421 900 000 000"
+  message: Message
+  message_ph: "Which tour are you interested in and when would you like to come?"
+  submit: Send message
+  sending: Sending...
+  sent: "✓ Sent!"
+  error: "Error — try again"
+
+footer:
+  quick_links: Quick links
+  contact: Contact
+  follow_us: Follow us
+  rights: All rights reserved.

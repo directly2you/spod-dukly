@@ -1,0 +1,44 @@
+# Site settings
+title: Spod Dukly
+email: info@spoddukly.sk   # TODO: replace with real e-mail
+description: >-
+  Spod Dukly – sprievodca v čase. Zážitkové prehliadky severovýchodného
+  Slovenska: Dukla, drevené chrámy, Údolie smrti a kraj Rusínov.
+
+# URL settings
+url: "https://directly2you.github.io"
+baseurl: "/spod-dukly"
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - README.md
+
+# Company information
+company:
+  name: Spod Dukly
+  short_name: Spod Dukly
+  legal_name: Marián Derco – Spod Dukly
+  phone: "+421 900 000 000"   # TODO: replace with real phone number
+  address: "Medvedie, okres Svidník, Slovensko"
+
+# Social media (fill in real profiles; empty = hidden)
+social:
+  facebook: ""
+  instagram: ""
+
+# SEO settings
+lang: sk
