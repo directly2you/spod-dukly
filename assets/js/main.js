@@ -49,46 +49,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   });
 });
 
-// Contact form — Formspree AJAX with i18n button labels from data attributes
-const contactForm = document.getElementById('contact-form');
-if (contactForm) {
-  contactForm.addEventListener('submit', async function(e) {
-    e.preventDefault();
-
-    const btn = this.querySelector('[type="submit"]');
-    const originalText = btn.textContent;
-    const sendingText = btn.dataset.sending || '...';
-    const sentText = btn.dataset.sent || '✓';
-    const errorText = btn.dataset.error || 'Error';
-
-    btn.disabled = true;
-    btn.textContent = sendingText;
-
-    try {
-      const response = await fetch(this.action, {
-        method: 'POST',
-        body: new FormData(this),
-        headers: { 'Accept': 'application/json' }
-      });
-
-      if (response.ok) {
-        this.reset();
-        btn.textContent = sentText;
-        setTimeout(() => {
-          btn.disabled = false;
-          btn.textContent = originalText;
-        }, 4000);
-      } else {
-        btn.textContent = errorText;
-        btn.disabled = false;
-      }
-    } catch {
-      btn.textContent = errorText;
-      btn.disabled = false;
-    }
-  });
-}
-
 // Gallery lightbox — click a photo to view it full screen
 document.addEventListener('DOMContentLoaded', function() {
   const lightbox = document.getElementById('lightbox');

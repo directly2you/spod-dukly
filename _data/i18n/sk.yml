@@ -52,25 +52,10 @@ gallery:
 
 contact:
   title: Kontakt
-  subtitle: "Napíšte mi a dohodneme si termín prehliadky."
-  info_title: Kontaktné informácie
+  subtitle: "Napíšte mi alebo zavolajte a dohodneme si termín prehliadky."
   email_label: E-mail
   phone_label: Telefón
   address_label: Adresa
-
-form:
-  name: Celé meno
-  name_ph: Jana Nováková
-  email: E-mailová adresa
-  email_ph: jana@priklad.sk
-  phone: "Telefón (voliteľné)"
-  phone_ph: "+421 900 000 000"
-  message: Správa
-  message_ph: "O ktorú trasu máte záujem a kedy by ste chceli prísť?"
-  submit: Odoslať správu
-  sending: Odosielam...
-  sent: "✓ Odoslané!"
-  error: "Chyba — skúste znova"
 
 footer:
   quick_links: Rýchle odkazy

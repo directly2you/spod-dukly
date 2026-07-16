@@ -1,6 +1,6 @@
 # Site settings
 title: Spod Dukly
-email: info@spoddukly.sk   # TODO: replace with real e-mail
+email: marian.derco@gmail.com
 description: >-
   Spod Dukly – sprievodca v čase. Zážitkové prehliadky severovýchodného
   Slovenska: Dukla, drevené chrámy, Údolie smrti a kraj Rusínov.
@@ -32,7 +32,7 @@ company:
   name: Spod Dukly
   short_name: Spod Dukly
   legal_name: Marián Derco – Spod Dukly
-  phone: "+421 900 000 000"   # TODO: replace with real phone number
+  phone: "+421 915 651 199"
   address: "Medvedie, okres Svidník, Slovensko"
 
 # Social media (fill in real profiles; empty = hidden)

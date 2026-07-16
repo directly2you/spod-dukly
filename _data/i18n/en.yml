@@ -55,25 +55,10 @@ gallery:
 
 contact:
   title: Contact
-  subtitle: "Write to me and we will arrange a date for your tour."
-  info_title: Contact information
+  subtitle: "Write to me or call me and we will arrange a date for your tour."
   email_label: E-mail
   phone_label: Phone
   address_label: Address
-
-form:
-  name: Full name
-  name_ph: Jane Smith
-  email: E-mail address
-  email_ph: jane@example.com
-  phone: "Phone (optional)"
-  phone_ph: "+421 900 000 000"
-  message: Message
-  message_ph: "Which tour are you interested in and when would you like to come?"
-  submit: Send message
-  sending: Sending...
-  sent: "✓ Sent!"
-  error: "Error — try again"
 
 footer:
   quick_links: Quick links

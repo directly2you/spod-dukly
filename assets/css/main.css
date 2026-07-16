@@ -114,9 +114,8 @@ img {
 }
 
 .logo-img {
-  height: 46px;
-  width: 46px;
-  border-radius: 50%;
+  height: 44px;
+  width: 44px;
 }
 
 .logo-text {
@@ -552,70 +551,57 @@ img {
 }
 
 /* Contact */
-.contact-grid {
+.contact-cards {
   display: grid;
-  grid-template-columns: 5fr 7fr;
-  gap: 56px;
-  align-items: start;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 26px;
+  max-width: 920px;
+  margin: 0 auto 48px;
 }
 
-.contact-info ul {
-  list-style: none;
-  margin-bottom: 30px;
+.contact-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+  padding: 34px 24px;
+  background-color: rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 10px;
+  color: #fff;
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-.contact-info li {
-  margin-bottom: 14px;
-}
-
-.contact-info a {
+.contact-card svg {
   color: var(--gold);
 }
 
-.contact-info a:hover {
+a.contact-card:hover {
+  background-color: rgba(255, 255, 255, 0.14);
+  transform: translateY(-4px);
   color: #fff;
 }
 
+.contact-card-label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.contact-card-value {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #fff;
+  overflow-wrap: anywhere;
+}
+
 .contact-logo {
-  max-width: 240px;
+  max-width: 220px;
+  margin: 0 auto;
   border-radius: 10px;
-}
-
-.contact-form .form-group {
-  margin-bottom: 18px;
-}
-
-.contact-form label {
-  display: block;
-  margin-bottom: 6px;
-  font-weight: 500;
-  font-size: 0.9rem;
-  color: rgba(255, 255, 255, 0.9);
-}
-
-.contact-form input,
-.contact-form textarea {
-  width: 100%;
-  padding: 13px;
-  border: 1px solid rgba(255, 255, 255, 0.25);
-  border-radius: 5px;
-  background-color: rgba(255, 255, 255, 0.95);
-  font-family: var(--font-body);
-  font-size: 1rem;
-  color: var(--text-dark);
-  transition: border-color 0.3s ease, box-shadow 0.3s ease;
-}
-
-.contact-form input:focus,
-.contact-form textarea:focus {
-  outline: none;
-  border-color: var(--gold);
-  box-shadow: 0 0 0 3px rgba(209, 170, 82, 0.3);
-}
-
-.contact-form textarea {
-  resize: vertical;
-  min-height: 140px;
 }
 
 /* Footer */
@@ -707,10 +693,14 @@ img {
 
 /* Responsive */
 @media (max-width: 900px) {
-  .about-grid,
-  .contact-grid {
+  .about-grid {
     grid-template-columns: 1fr;
     gap: 40px;
+  }
+
+  .contact-cards {
+    grid-template-columns: 1fr;
+    max-width: 440px;
   }
 
   .about-photo {
