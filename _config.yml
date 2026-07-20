@@ -6,8 +6,8 @@ description: >-
   Slovenska: Dukla, drevené chrámy, Údolie smrti a kraj Rusínov.
 
 # URL settings
-url: "https://directly2you.github.io"
-baseurl: "/spod-dukly"
+url: "https://www.spoddukly.sk"
+baseurl: ""
 
 # Build settings
 markdown: kramdown
